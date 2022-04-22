@@ -1,0 +1,14 @@
+/* // Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+@import 'inspinia/css/bootstrap.min.css';
+@import 'inspinia/css/fontawesome/css/all.css';
+@import '../js/summernote/summernote.css';
+@import 'inspinia/css/animate.css';
+@import 'inspinia/css/style.css';
+@import 'inspinia/css/custom.css';
+@import 'inspinia/css/plugins/textSpinners/spinners.css';
+@import '~jquery-toast-plugin';
+@import '~jquery-confirm/css/jquery-confirm.css';
+@import '~@chenfengyuan/datepicker/dist/datepicker.min.css';
+@import 'inspinia/css/icon.min.css';

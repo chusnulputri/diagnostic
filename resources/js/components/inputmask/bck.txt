@@ -1,0 +1,108 @@
+import inputmask from 'inputmask';
+import 'inputmask/dist/jquery.inputmask.js';
+
+export default {
+    data(){
+        return {
+            searchParams    : '',
+        }
+    },
+
+    props: {
+      value: {
+          type: String,
+          required: false,
+      },
+      
+      separator: {
+        type: String,
+        required: false,
+        default: '.'
+      },
+
+      radix: {
+        type: String,
+        required: false,
+        default: ','
+      },
+
+      name : {
+        type: String,
+        required: false,
+      },
+
+      digits : {
+        type: Number,
+        required: false,
+        default: 2
+      },
+
+      id : {
+        type: String,
+        required: false
+      },
+
+      disabled : {
+        type: Boolean,
+        required: false,
+        default: false
+      },
+
+      leading : {
+        type: String,
+        required: false,
+        default: ''
+      },
+    },
+
+    mounted: function () {
+      var vm = this;
+
+      if(this.types == 'number')
+        radix = separator = '';
+
+      $(this.$el.getElementsByClassName('content-vue-input-mask')[0]).inputmask("currency", {
+          radixPoint: vm.radix,
+          groupSeparator: vm.separator,
+          digits: vm.digit,
+          allowMinus: (vm.minus) ? vm.minus : false,
+          autoGroup: true,
+          prefix: vm.leading,
+          rightAlign: false,
+          oncleared: function () {  }
+      }).on('keyup', function(z){
+        let selected
+        let e = $(z.target).val()
+        
+        vm.$emit('input', e);
+
+      })
+    },
+
+    methods: {
+      // handleInput (e) {
+      //   this.$emit('input', 20000)
+      // }
+    },
+
+    computed: {
+      selectedData: {
+        get() {
+            if(!this.value || this.value == '' || this.value == 0)
+              return '0.00';
+
+            return this.value.toString().replaceAll(this.separator, '').replaceAll(this.radix, '.');
+        },
+        set(val) {
+          // this.$emit('input', val);
+        }
+      }
+    },
+
+    template: `
+      <div class="custom-file">
+        <input type="hidden" :name="name" v-model="selectedData" readonly="true">
+        <input type="text" :class="'form-control content-vue-input-mask text-right modul-keuangan '" :id="id" :disabled="disabled" :value="(value) ? value : 0">
+      </div>
+    `,
+};

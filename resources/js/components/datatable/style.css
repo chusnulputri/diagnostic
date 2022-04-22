@@ -1,0 +1,177 @@
+.swamsid-vue-datatable{
+	padding: 0px 10px;
+	color: #607D8B !important;
+	font-weight: bold;
+}
+
+.swamsid-vue-datatable > .navigation-bar{
+	/* background: rgba(250, 236, 36, 0.1); */
+	padding: 0px 15px 10px 15px;
+}
+
+.swamsid-vue-datatable > .navigation-bar .left-navigation{
+	font-size: 9pt;
+}
+
+.swamsid-vue-datatable > .navigation-bar .left-navigation select{
+	background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat #fff;
+	background-position: right 10px top; /* Change the px value here to change the distance */
+	-moz-appearance: none; 
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+	padding : 4px 15px;
+	height: 40px;
+	border-radius: 5px;
+	font-size: 8pt !important;
+	color: #607D8B !important;
+	outline: none !important;
+	cursor: pointer;
+}
+
+.swamsid-vue-datatable > .navigation-bar .left-navigation select:focus{
+	border: 1px solid #e5e6e7 !important;
+}
+
+.swamsid-vue-datatable > .navigation-bar .left-navigation input{
+	background: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAnCAYAAACWn7G7AAADuUlEQVRYhe2Z2U9TQRTGP6BXrWIUC4XSVgFBBLcgKiKWCAKyGNQoMRoSEl998l/wwUffTNQYH3wh7oqIaNRqZHFBNmUTZBEFgdJC2ZeCmRstvXe4dUpbQhN+b3POdycfM6cz5168ZmdnWwD4YeljkgFQAljrAWY5bwBTVHhpMuXtIUZ5ls26C48yK6MiDjA4PILGtk40tv2AYcDMP8jJZAgJDkRU2EaEa9Xw8nKdWXLO9gPYQGXsMDo+geLST9B/qsHw6JikMEyjwrGkA9gZEUrlFoDRYbMd3b24drcQ3QYjlZMiZf9unM1Igpdzy2x0qAx+9hhw+dY9mEdGqZw9Xr6vxPjEJM4dT3eqLJjNjk1M4srtAspoZIgG8buioQ0MAMfJMDg0gvrWDpRU1WHIRltS9RVqpQLpCXupuVlhLoOHr0tR8KbcOiYrdCo1EZkH91FaQp9pENfvP0XLjy5rTL5yBS6ez4P/+nWUngEj09FFfkSvPlQJYidTdJJGCQF+63Ah9yTUSn9rjOyOeB5HYDLb2N6JkbFx63izVoUsXRylE7N61UrkZh0W1Gl1UysslhlKywKT2eaOX4Jxwq5tlEaKyBAtVP4Ka7bXaMLvfvaTxBYms79Fx5RWpaQ0UpBV1QQGWLMzM7Po/3uBuMWsZUa4bZzMh9LYQ6wXz+dSs76r5YLxgHmY0tjDZB4SzieX21FLw2Q2TK0SjGub2yiNFOSsbe/qsWbXyFchWKmQUNuHyWxkqFYwLq+pR1dfP6Wbj6KSj3wv8Y/NGhVv2G1mNwYp+ZvqH+S8vHqnEAND9svhXeUXFJdWCGK62B2UzqVm+dsqJVEQ6+zpw6Ub+fjc0IzJqWlBjvza84v1uPnouSAeszUce6K3UPOz4lDX9eBVCZ68fU/FyW0VHKDACo7jV5v8IaRxEbNlkwax0RFIi4+lcgw43iLmP9PjRflnKu4IqfGkZUx2v1kCabof68v4N4X/QVaSXNXkjcIWsrpnMpL+87QLzBLIdr+tqEV103d09RkxOTX3+WH9Wl+EqoNwMGY7dkeF86fH9ftF1BzpCXtw+sghKi7Bws3aYhgYhMFkxrTFwl8ggQo/vh20hezEI30Z9Wymbh9yUhOp+Dy4xiwrpB8mfbGY7EPxOJGcQMVFsPWzroKYIn2wmIq6b1RsPhb9u8HRxDjkpM1tOymXvOxUSjcfTn03WCjkDcPH2xuVDS04laJDxCY100yLWrNOsrg16yzLZt2Fx5nlqOjShCNHV69H/F8BMP0BTxBW6VTRyPIAAAAASUVORK5CYII=) no-repeat #fff;
+	background-position: right 9px top 10px; /* Change the px value here to change the distance */
+	background-size: 20px 20px;
+	-moz-appearance: none; 
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+	padding : 4px 30px 4px 15px;
+	height: 40px;
+	border-radius: 5px !important;
+	font-size: 8pt !important;
+	color: #607D8B !important;
+	border: 1px solid #e5e6e7 !important;
+}
+
+.swamsid-vue-datatable > .navigation-bar .right-navigation{
+	font-size: 9pt;
+	padding-right: 15px;
+	padding-top: 5px;
+}
+
+ul#swamsid-horizontal-list {
+	list-style: none;
+	margin-bottom: 0px;
+	float: right !important;
+	padding: 0px;
+}
+ul#swamsid-horizontal-list li {
+	display: inline-block;
+	font-weight: normal;
+	padding: 4px 2px 0px 2px;
+	cursor: pointer !important;
+	color: #78909C !important;
+}
+
+ul#swamsid-horizontal-list li:hover {
+	color: #00b6cd !important;
+}
+
+.swamsid-vue-datatable > .table-bar{
+	background: #fafafa;
+	padding: 0px;
+}
+
+.swamsid-vue-datatable > .table-bar > table.swamsid-vue-datatable{
+	width: 100% !important;
+	border: 0px solid #eee;
+	margin-top: 0px;
+	background: white;
+}
+
+.swamsid-vue-datatable > .table-bar > table.swamsid-vue-datatable th{
+	font-size: 9pt;
+	text-align: center;
+	border-top: 1.5px solid #eee;
+	background: #fafafa;
+	padding: 15px 10px 15px 10px;
+	cursor: pointer;
+	border-bottom: 1px solid #eaeaea;
+	color: #676a6c;
+	font-weight: 600;
+}
+
+.swamsid-vue-datatable > .table-bar > table.swamsid-vue-datatable th i.disabled{
+	color: #cacaca;
+}
+
+.swamsid-vue-datatable > .table-bar > table.swamsid-vue-datatable th i{
+	float: right;
+	margin-top: 3px;
+}
+
+.swamsid-vue-datatable > .table-bar > table.swamsid-vue-datatable tbody td{
+	font-weight: 500;
+	font-size: 12.3px;
+	padding: 15px 0px 15px 10px;
+	background: rgba(247, 250, 254, 0.2);
+	border-bottom: 1px solid #eaeaea;
+}
+
+.swamsid-vue-datatable > .footer-bar{
+	padding: 15px 5px 13px 5px;
+}
+
+.swamsid-vue-datatable > .footer-bar .left-footer{
+	font-weight: 600;
+	color: #c5c5c5;
+	font-size: 8pt;
+	padding-left: 35px;
+	text-align: left;
+	padding-top: 3px;
+}
+
+.swamsid-vue-datatable > .footer-bar .right-footer{
+	font-weight: 600;
+	color: #b5b5b5;
+	font-size: 8pt;
+	text-align: right;
+	padding-right: 35px;
+	padding-top: 3px;
+}
+
+.swamsid-vue-datatable > .footer-bar span.table-data-paginate{
+	cursor: pointer;
+}
+
+.swamsid-vue-datatable > .footer-bar span.table-data-paginate.disabled{
+	color: #d5d5d5;
+	cursor: no-drop;
+}
+
+.swamsid-vue-datatable > .footer-bar span.table-data-paginate.disabled:hover{
+	color: #d5d5d5;
+}
+
+.swamsid-vue-datatable > .footer-bar span.table-data-paginate:hover{
+	color: #90A4AE;
+}
+
+.swamsid-vue-datatable input[type="checkbox"]{
+	width: 13px; /*Desired width*/
+	height: 13px; /*Desired height*/
+	cursor: pointer;
+	border: 1px solid #eee;
+}
+
+.swamsid-vue-datatable .loader {
+	border: 5px solid #f3f3f3; /* Light grey */
+	border-top: 5px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	animation: spin 1s linear infinite;
+	margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+:root {
+    /* sidebar color */
+        --sidebarBg         : #252525;
+        --navHeaderBg       : #2a2a2a;
+        --sidebarActiveBg   : #303030;
+        
+    /* Top Nav Bar */
+        --topNavBg          : #fff;
+        
+    /* default Color */
+        --colorDefault      : #303030;
+
+    /* defaultColor */
+        --primary           : #9b00db;
+        --primaryHover      : #df0181;
+        
+        --danger            : #e83d49;
+        --info              : #37b9e4;
+        --success           : #3cbf7c;
+        --warning           : #fd923d;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+[disabled]{
+    cursor: no-drop;
+}
+
+body{
+    overflow-y: scroll !important;
+    padding-right: 0px !important
+}
+
+.loading-state .load-bar {
+    width: 100%;
+    height: 30px;
+    animation-name: example;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    margin-bottom: 20px;
+}
+
+@keyframes example {
+    0%   {background-color: rgba(106, 113, 180, 0.1);}
+    100% {background-color: rgba(106, 113, 180, 0.3);}
+}
+
+ul.nav-second-level li:not(.active):not(.li-divider) a:hover,
+ul.nav-second-level li:not(.active):not(.li-divider) a:focus{
+    /* background  : #9b00db !important; */
+    color       : #9b00db !important;
+}
+
+.nav-second-level > li.active > a{
+    background  : #9b00db !important;
+    color       : var(--sidebarActiveBg) !important;
+}
+
+a.title-sidebar{
+    padding : 10px 0px 10px 30px !important; 
+    color   : rgba(255,255,255,0.3) !important;
+    cursor  : context-menu;
+}
+
+.breadcrumb > li{
+    font-size: 9pt;
+}
+
+.breadcrumb > li a{
+    color: #90A4AE !important;
+}
+
+.breadcrumb > li.active{
+    color: #607D8B !important;
+    font-weight: normal;
+}
+
+::placeholder {
+    color: rgba(178, 190, 195,1.0) !important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(178, 190, 195,1.0) !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(178, 190, 195,1.0) !important;
+}
+
+input{
+    font-size: 9pt !important;
+    font-weight: 600 !important;
+    color: var(--sidebarActiveBg) !important;
+    height: 38px;
+    border: 1px solid #dadce0 !important;
+    border-radius: 3px !important;
+    border-bottom: 1px solid #dadce0 !important;
+}
+
+.mx-input{
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    /* cursor: pointer !important; */
+    font-size: 9pt !important;
+    height: 38px !important;
+    color: var(--sidebarActiveBg) !important;
+    font-weight: 600 !important;
+}
+
+.mx-datepicker-popup{
+    z-index: 999999 !important;
+}
+
+select{
+    cursor: pointer !important;
+    font-size: 9pt !important;
+    font-weight: 600 !important;
+    height: 38px !important;
+    color: var(--sidebarActiveBg) !important;
+    border: 1px solid #dadce0 !important;
+    outline: none !important;
+    border-bottom: 1px solid #dadce0 !important;
+}
+
+textarea{
+    font-size: 9pt !important;
+    font-weight: 600 !important;
+    color: var(--sidebarActiveBg) !important;
+    border: 1px solid #dadce0 !important;
+    border-radius: 3px !important;
+    border-bottom: 1px solid #dadce0 !important;
+}
+
+/* select 2 custom style */
+.select2-selection {
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+    background-color: red;
+    border: 1px solid #dadce0 !important;
+    border-radius: 3px !important;
+    color: #2196F3 !important;
+    font-size: 9pt;
+    outline: 0;
+    height: 38px !important;
+    text-align: left;
+    font-weight: 600;
+    padding-top: 7px;
+    border-bottom: 1px solid #dadce0 !important;;
+}
+
+  .select2-selection__placeholder{
+      color: rgba(178, 190, 195,1.0) !important;
+      font-weight: 600;
+}
+  
+  .select2-selection__rendered {
+    margin: -2px;
+    margin-left: 3px;
+    color: var(--sidebarActiveBg) !important;
+}
+  
+  .select2-selection__arrow {
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: var(--primary) !important;
+    color: var(--sidebarActiveBg) !important;
+}
+
+.select2-dropdown{
+    z-index : 99999 !important;
+    border: 1px solid #dadce0 !important;
+}
+
+/* datepicker custom */
+
+.datepicker-panel > ul > li {
+    border-radius: 5px !important;
+    border: 1px solid rgba(158, 158, 158, 0.12) !important;
+}
+
+.datepicker-panel > ul > li:hover{
+    background-color: rgba(76, 175, 80, 1) !important;
+    color: white !important;
+}
+
+.datepicker-panel > ul > li.muted,
+.datepicker-panel > ul > li.muted:hover {
+    color: rgba(158, 158, 158, 0.7) !important;
+}
+
+.datepicker-panel > ul > li[data-view="years prev"],
+.datepicker-panel > ul > li[data-view="year prev"],
+.datepicker-panel > ul > li[data-view="month prev"],
+.datepicker-panel > ul > li[data-view="years next"],
+.datepicker-panel > ul > li[data-view="year next"],
+.datepicker-panel > ul > li[data-view="month next"],
+.datepicker-panel > ul > li[data-view="next"] {
+    font-weight: bold !important;
+}
+
+.datepicker-panel > ul > li[data-view="years current"],
+.datepicker-panel > ul > li[data-view="year current"],
+.datepicker-panel > ul > li[data-view="month current"] {
+    font-weight: bold !important;
+}
+
+.datepicker-panel > ul[data-view="week"] > li,
+.datepicker-panel > ul[data-view="week"] > li:hover {
+    background-color: rgba(76, 175, 80, 0.7) !important;
+    color: white !important;
+    border-radius: 0px !important;
+}
+
+.datepicker-panel > ul > li.highlighted {
+    background-color: rgba(255, 87, 34, 0.2) !important;
+}
+
+.datepicker-panel > ul > li.highlighted:hover {
+    color: rgba(255, 87, 34, 0.8) !important;
+}
+
+.datepicker-panel > ul > li.picked,
+.datepicker-panel > ul > li.picked:hover {
+    background: rgba(33, 150, 243, 0.15) !important;
+    color: rgba(96, 125, 139,1.0) !important;
+}
+
+.form-group{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;
+    padding: 0px;
+}
+
+.form-group .label-form{
+    font-size: 12px;
+    padding-left: 10px !important;
+    font-weight: 600;
+    color: #676a6c;
+    margin-bottom: 11px;
+}
+
+.tooltip{
+    z-index: 9999 !important;
+    font-size: 9pt !important;
+    font-weight: normal !important;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.3px;
+}
+
+.detail-content{
+    margin-top: 0px;
+    border-bottom: 1px solid rgba(55, 185, 228, 0.2);
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.detail-content .title{
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+    color: #bbb;
+    font-size: 9pt;
+}
+
+.detail-content .value{
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--sidebarActiveBg);
+    font-size: 9pt;
+    padding-left: 0px;
+}
+
+/* table rekap : table di dalam modal detail data  */
+.table-rekap th{
+    padding: 10px !important;
+    color: #303030;
+    background: #f3f3f3;
+}
+
+.table-rekap td{
+    padding: 10px !important;
+    font-size: 9pt;
+    border: 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* custom pop up modal */
+.modal-content .secondPopUp{
+    position: absolute; 
+    background: rgba(0,0,0,0.7); 
+    height: 100%; 
+    width: 100%; 
+    top: 0px; 
+    left: 0px; 
+    z-index: 999999; 
+    padding: 0px 0px;
+    overflow: hidden;
+    display: none;
+}
+
+.modal-content .secondPopUp .popUp-content{
+    width: 40%; 
+    background: white; 
+    height: 99%; 
+    position: absolute; 
+    right: -350px; 
+    top: 4px; 
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+    transition: 0.5s;
+}
+
+.modal-content .secondPopUp .popUp-content .row{
+    padding: 20px 30px 10px 30px; 
+    margin-bottom: 20px;
+}
